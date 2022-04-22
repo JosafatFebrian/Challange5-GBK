@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onBoarding.screens.thirdScreen"
+    android:background="#fffff">
+
+    <ImageView
+        android:id="@+id/imgLandingPage3"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="80dp"
+        android:cropToPadding="true"
+        android:src="@drawable/landing_page3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Tulis namamu di bawah."
+        android:textColor="#7D513B"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgLandingPage3"
+        app:layout_constraintStart_toStartOf="@+id/imgLandingPage3"
+        app:layout_constraintTop_toBottomOf="@+id/imgLandingPage3" />
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Masukan Namamu."
+        android:textSize="15dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/imgLandingPage3"
+        app:layout_constraintStart_toStartOf="@+id/imgLandingPage3"
+        app:layout_constraintTop_toBottomOf="@+id/description3" />
+
+    <TextView
+        android:id="@+id/Mulai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="36dp"
+        android:text="Mulai"
+        android:textColor="#EFB961"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
